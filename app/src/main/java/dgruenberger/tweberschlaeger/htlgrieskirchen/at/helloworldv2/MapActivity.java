@@ -1,12 +1,13 @@
 package dgruenberger.tweberschlaeger.htlgrieskirchen.at.helloworldv2;
 
-import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import org.osmdroid.DefaultResourceProxyImpl;
@@ -23,7 +24,7 @@ import java.util.List;
 /**
  * Created by dgruenberger on 19.06.2015.
  */
-public class MapActivity extends Activity implements LocationListener {
+public class MapActivity extends ActionBarActivity implements LocationListener {
 
     protected MapView mapView;
     protected IMapController mapController;
@@ -44,6 +45,7 @@ public class MapActivity extends Activity implements LocationListener {
         setContentView(R.layout.layout_mapactivity);
         mapView = (MapView) findViewById(R.id.map);
         locMan = (LocationManager) getSystemService(LOCATION_SERVICE);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void addMarkers()
@@ -61,6 +63,13 @@ public class MapActivity extends Activity implements LocationListener {
         );
         itemList.setFocusItemsOnTap(true);
         mapView.getOverlays().add(itemList);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem)
+    {
+        onBackPressed();
+        return true;
     }
 
     private void addOverlay() {

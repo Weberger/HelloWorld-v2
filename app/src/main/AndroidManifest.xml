@@ -30,7 +30,13 @@
         </activity>
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map" >
+            android:label="@string/title_activity_map"
+            android:parentActivityName="dgruenberger.tweberschlaeger.htlgrieskirchen.at.helloworldv2.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dgruenberger.tweberschlaeger.htlgrieskirchen.at.helloworldv2.MainActivity" />
+
         </activity>
     </application>
 
