@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelloWorldv2"
+    android:orientation="vertical"
+    android:background="#89e124">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/sensoren"
+            android:id="@+id/buttonSensoren"
+            android:background="@drawable/green_button"
+            style="@style/button_text"
+            android:layout_weight="1"
+            android:onClick="btnSensorClicked" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/gps"
+            android:id="@+id/buttonGPS"
+            android:onClick="btnGPSClicked"
+            android:background="@drawable/green_button"
+            style="@style/button_text"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="btnNotificationClicked"
+            android:text="@string/notification"
+            android:id="@+id/buttonNotification"
+            android:background="@drawable/green_button"
+            style="@style/button_text"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/assets"
+            android:id="@+id/buttonAssets"
+            android:background="@drawable/green_button"
+            style="@style/button_text"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/datenbank"
+            android:id="@+id/buttonDatenbank"
+            android:background="@drawable/green_button"
+            style="@style/button_text"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dialog"
+            android:onClick="btnDialogClicked"
+            android:id="@+id/buttonDialoge"
+            android:background="@drawable/green_button"
+            style="@style/button_text"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HelloWorld v2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_startscreen">HelloWorld v2</string>
+    <string name="title_activity_map">HelloWorld v2</string>
+    <string name="sensoren">Sensoren</string>
+    <string name="gps">GPS</string>
+    <string name="notification">Notification</string>
+    <string name="assets">Assets</string>
+    <string name="dialog">Dialog</string>
+    <string name="datenbank">Datenbank</string>
+</resources>
